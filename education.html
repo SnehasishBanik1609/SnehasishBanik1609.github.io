@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Education</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Snehasish <span>Banik</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="skills.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700"><a href="workHistory.html">Work History</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600"><a href="education.html">Education</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800"><a href="feedback.html">Feedback</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contact.html">Contact</a></div>  
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="workHistory.html">Work History</a>
+                <a href="education.html">Education</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="main-container">
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="100">My Education:</h1>
+
+                <!-- Education 1 -->
+                <div class="work-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                    <img src="Education/REVAUNIVERSITY.png" alt="REVA UNIVERSITY" class="company-logo">
+                    <div class="work-details">
+                        <h2>REVA University</h2>
+                        <p><strong>Location:</strong> Bengaluru, India</p>
+                        <p><strong>Specialization:</strong> B.TECH in Computer Science & Engineering</p>
+                        <p><strong>Duration:</strong> 2017 - 2021</p>
+                    </div>
+                </div>
+
+                <!-- Education 2 -->
+                <div class="work-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                    <img src="Education/BIGMS.png" alt="Barasat Indira Gandhi Memorial High School" class="company-logo">
+                    <div class="work-details">
+                        <h2>Barasat Indira Gandhi Memorial High School</h2>
+                        <p><strong>Location:</strong> Kolkata, India</p>
+                        <p><strong>Specialization:</strong> CBSE - Intermediate in Science (Physics | Chemistry | Maths)</p>
+                        <p><strong>Duration:</strong> 2015 - 2017</p>
+                    </div>
+                </div>
+
+                <!-- Education 3 -->
+                <div class="work-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+                    <img src="Education/SXI.png" alt="ST. Xaviers Institution" class="company-logo">
+                    <div class="work-details">
+                        <h2>ST. Xaviers Institution</h2>
+                        <p><strong>Location:</strong> Kolkata, India</p>
+                        <p><strong>Specialization:</strong> High School (ICSE)</p>
+                        <p><strong>Duration:</strong> 2002 - 2015</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

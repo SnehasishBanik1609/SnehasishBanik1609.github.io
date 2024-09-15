@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Skills | Snehasish Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Snehasish <span>Banik</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="skills.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="workHistory.html">Work History</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="education.html">Education</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600"><a href="feedback.html">Feedback</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700"><a href="contact.html">Contact</a></div> 
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="workHistory.html">Work History</a>
+                <a href="education.html">Education</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="main-container">
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="100">My Skills:</h1>
+                <p data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">Here are some of the top rated skills I have acquired over my career:</p>
+
+                <div class="skills-list" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                    <div class="skill-item">
+                        <i class="fa-solid fa-check"></i> UI Automation Testing using Selenium.
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-solid fa-check"></i> API Automation using RestAssured.
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-solid fa-check"></i> AI based Automation tools for Web/Mobile Testing such as - Katalon Studio & TOSCA.
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-solid fa-check"></i> API Testing using SoapUI, Postman, Katalon Studio.
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-solid fa-check"></i> ETL Testing using Microsoft SQL Server or similar DB servers.
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-solid fa-check"></i> Behavior-Driven Development (BDD) & Test-Driven Development (TDD) Approach.
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-solid fa-check"></i> Version Control System - Azure Git - Git GUI & Git Bash.
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-solid fa-check"></i> CI/CD Pipeline - Azure Devops, Jenkins, Docker.
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-solid fa-check"></i> Project Management/Bug Tracking Tools - Jira, Rally, VersionOne.
+                    </div>
+                </div>
+
+                <p data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500">I am always eager to learn new technologies and tools to enhance my testing capabilities and deliver quality software solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

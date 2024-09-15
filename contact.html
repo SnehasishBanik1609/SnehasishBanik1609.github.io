@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Contact | Snehasish Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Snehasish <span>Banik</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="skills.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="workHistory.html">Work History</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="education.html">Education</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600"><a href="feedback.html">Feedback</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700"><a href="contact.html">Contact</a></div> 
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="workHistory.html">Work History</a>
+                <a href="education.html">Education</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="main-container">
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="100">Contact Me:</h1>
+                <h2><p><i class="fa-solid fa-phone"></i> +91 73488 37793</p></h2>
+                <h2><p><i class="fa-solid fa-envelope"></i> rana2013.banik@gmail.com</p></h2>
+                <h2><p><i class="fa-solid fa-envelope"></i> snehasish.banik16@gmail.com</p></h2>
+                <p data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">You can reach me through the following platforms or send me a message directly:</p>
+                
+                <!-- Contact Information -->
+                <div class="contact-details" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                    <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/snehasish-banik/" target="_blank">LinkedIn</a></p>
+                    <p><i class="fa-brands fa-twitter"></i> <a href="https://twitter.com/SNEHASISHBANIK7" target="_blank">Twitter</a></p>
+                    <p><i class="fa-brands fa-facebook"></i> <a href="https://www.facebook.com/snehasish.banik.9" target="_blank">Facebook</a></p>
+                    <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/7348837793" target="_blank">WhatsApp</a></p>
+                    <p><i class="fa-brands fa-github"></i> <a href="https://github.com/SnehasishBanik1609" target="_blank">GitHub</a></p>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                    <form id="contactForm" onsubmit="return handleSubmit();">
+                        <label for="message">Direct Message:</label>
+                        <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+
+      function handleSubmit() {
+        alert("This website is not hosted on a server, therefore this feature cannot be used. Please try any other social link to connect.");
+        return false; // Prevents the form from submitting
+      }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

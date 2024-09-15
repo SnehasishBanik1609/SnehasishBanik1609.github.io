@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Feedback | Snehasish Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Snehasish <span>Banik</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="skills.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="workHistory.html">Work History</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="education.html">Education</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600"><a href="feedback.html">Feedback</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700"><a href="contact.html">Contact</a></div> 
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="workHistory.html">Work History</a>
+                <a href="education.html">Education</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="main-container">
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="100">Feedbacks:</h1>
+                <p data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">Here's what people have to say about my work:</p>
+                
+                <!-- Feedback Images Carousel -->
+                <div class="feedback-carousel" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                    <img id="feedbackImage1" src="Feedbacks/feedback1.png" alt="Feedback 1" class="feedback-image">
+                    <img id="feedbackImage2" src="Feedbacks/feedback2.png" alt="Feedback 2" class="feedback-image" style="display:none;">
+                    <img id="feedbackImage3" src="Feedbacks/feedback3.png" alt="Feedback 3" class="feedback-image" style="display:none;">
+                    <img id="feedbackImage4" src="Feedbacks/feedback4.png" alt="Feedback 4" class="feedback-image" style="display:none;">
+                    <img id="feedbackImage5" src="Feedbacks/feedback5.png" alt="Feedback 5" class="feedback-image" style="display:none;">
+                    <img id="feedbackImage6" src="Feedbacks/feedback6.png" alt="Feedback 5" class="feedback-image" style="display:none;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
