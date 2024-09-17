@@ -79,25 +79,4 @@ function navigateToContact() {
     window.location.href = 'contact.html';
 }
 
-/*
-//New
-const menuBtn = document.querySelector('.hamburg');
-const closeBtn = document.querySelector('.cancel');
-const navLinks = document.querySelector('.nav-container .links');
-
-menuBtn.addEventListener('click', () => {
-    navLinks.style.display = 'flex';
-    menuBtn.style.display = 'none';
-    closeBtn.style.display = 'block';
-});
-
-closeBtn.addEventListener('click', () => {
-    navLinks.style.display = 'none';
-    menuBtn.style.display = 'block';
-    closeBtn.style.display = 'none';
-});
-
-*/
-
-
 

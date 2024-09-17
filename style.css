@@ -6,20 +6,13 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-/*
+
 body{
     width: 100%;
     height: 100vh;
     overflow: hidden;
     background-color: black;
 }
-*/
-
-body {
-    width: 100%;
-    background-color: black;
-}
-
 
 nav{
     width: 100%;
@@ -27,18 +20,12 @@ nav{
     position: sticky;
 }
 
-/*
 .nav-container{
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-*/
-
-.nav-container, .main-container {
-    flex-wrap: wrap;
 }
 
 .logo{
@@ -67,11 +54,6 @@ nav{
     display: flex;
 }
 
-.main-container {
-    justify-content: center;
-}
-
-/*
 .nav-container .links a{
     position: relative;
     font-size: 1.2rem;
@@ -80,11 +62,6 @@ nav{
     text-decoration: none;
     font-weight: 550;
     transition: 0.3s linear;
-}
-*/
-
-.nav-container .links a {
-    font-size: clamp(1rem, 1vw + 0.5rem, 1.2rem); /* Adjust dynamically */
 }
 
 .nav-container .links a::before{
@@ -132,14 +109,11 @@ nav{
     background-color: #077b32;
 }
 
-/*
 section{
     width: 100%;
     height: 90vh;
 }
-*/
 
-/*
 .main-container{
     width: 100%;
     height: 100%;
@@ -147,9 +121,7 @@ section{
     justify-content: space-evenly;
     align-items: center;
 }
-*/
 
-/*
 .main-container .image{
     width: 500px;
     height: 55vh;
@@ -157,19 +129,6 @@ section{
     overflow: hidden;
     box-shadow: 0 0 50px #077b32;
 }
-*/
-
-.main-container .image {
-    width: 40vw; /* Instead of fixed 500px */
-    height: auto; /* Keep height proportional */
-    border-radius: 50%; /* More consistent across screen sizes */
-}
-
-section {
-    height: auto; /* Allow sections to adjust with content */
-    min-height: 90vh;
-}
-
 
 .main-container .image img{
     width: 100%;
@@ -199,14 +158,8 @@ section {
     min-height: 100px;
 }
 
-/*
 .content h1{
     font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
-}
-*/
-
-.content h1 {
-    font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
 }
 
 .content h1 span{
@@ -214,15 +167,9 @@ section {
     text-shadow: 0  0 10px #077b32;
 }
 
-/*
 .content .typewriter{
     font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
     font-weight: 600;
-}
-*/
-
-.content .typewriter {
-    font-size: clamp(1.2rem, 2vw + 1rem, 2.5rem);
 }
 
 .content .typewriter-text{
@@ -230,15 +177,9 @@ section {
     text-shadow: 0 0 10px #077b32;
 }
 
-/*
 .content p{
     font-size: clamp(0.4rem , 0.2rem + 9vw, 1rem);
     margin: 10px 0;
-}
-*/
-
-.content p {
-    font-size: clamp(1rem, 1vw + 0.5rem, 1.2rem);
 }
 
 .social-links i{
@@ -309,7 +250,7 @@ section {
     }
 
     .main-container .content{
-        width: 90%;
+        width: 80%;
     }
 
     .social-links i{
@@ -318,51 +259,26 @@ section {
         font-size: 1.5rem;
     }
 
-    /*
     .main-container .image{
         z-index: -1;
         width: 50%;
         height: 60%;
     }
-    */
-
-    .main-container .image {
-        width: 70%;
-        height: auto; /* Keep height proportional */
-    }
 }
 
 @media (max-width:440px){
-    /*
     .main-container .image{
         width: 50%;
         height: 60%;
         margin-bottom: 0px;
     }
-    */
 
-    .main-container .image {
-        width: 80%; /* Larger on small screens */
-        height: auto;
-    }
-
-    /*
     .main-container .content{
         width: 80%;
-    }
-    */
-
-    .main-container .content{
-        width: 90%;
     }
 
     .main-container button{
         margin-top: 15px;
-    }
-
-    /* New */
-    .content h1, .content p {
-        font-size: 1.2rem; /* Adjust font size */
     }
 }
 
@@ -501,9 +417,3 @@ i {
     text-justify: inter-word;
     margin: 0 0 20px 0;
 }
-
-
-/*------------------*/
-
-
-
