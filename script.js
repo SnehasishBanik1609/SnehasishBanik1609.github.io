@@ -79,6 +79,7 @@ function navigateToContact() {
     window.location.href = 'contact.html';
 }
 
+/*
 //New
 const menuBtn = document.querySelector('.hamburg');
 const closeBtn = document.querySelector('.cancel');
@@ -95,6 +96,8 @@ closeBtn.addEventListener('click', () => {
     menuBtn.style.display = 'block';
     closeBtn.style.display = 'none';
 });
+
+*/
 
 
 
